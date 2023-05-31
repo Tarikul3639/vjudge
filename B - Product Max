@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define nn '\n'
+#define ll long long
+int main()
+{
+
+    ll a, b, c, d;
+    cin >> a >> b >> c >> d;
+    ll x, y;
+    ll sum;
+    ll sum1 = a * c;
+    ll sum2 = a * d;
+    ll sum3 = b * c;
+    ll sum4 = b * d;
+   vector<ll>data;
+
+    data.push_back(sum1);
+    data.push_back(sum2);
+    data.push_back(sum3);
+    data.push_back(sum4);
+    sort(data.begin(),data.end());
+    reverse(data.begin(),data.end());
+    
+
+cout<<data[0]<<" ";
+    // for(ll i=0;i<data.size();i++)
+    // {
+    //     cout<<data[i]<<" ";
+    // }
+    cout<<nn;
+    return 0;
+}
