@@ -1,0 +1,57 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define nn '\n'
+int main()
+{
+    ll t;
+    cin >> t;
+    ll a = 1;
+    while (t--)
+    {
+
+        ll number;
+        vector<ll> v;
+        cin >> number;
+        ll c = 0;
+        ll x = 1;
+
+        // for (ll i = 2; i < number; i++)
+        // {
+        //     while (number % i == 0)
+        //     {
+        //         v.push_back(i);
+        //         number /= i;
+        //         c++;
+        //     }
+        // }
+        // if (number > 1)
+        // {
+        //     v.push_back(number);
+        // }
+        // for (ll i = 0; i < v.size(); i++)
+        // {
+        //     cout << v[i] << " ";
+        // }
+        // cout<<nn;
+
+        while (number % 2 == 0)
+        {
+
+            number /= 2;
+            c++;
+            x *= 2;
+        }
+        if (c == 0)
+        {
+            cout << "Case " << a << ": Impossible" << nn;
+            a++;
+        }
+        else
+        {
+            cout << "Case " << a << ": " << number << " " << x << nn;
+            a++;
+        }
+    }
+    return 0;
+}
