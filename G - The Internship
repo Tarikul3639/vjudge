@@ -1,0 +1,51 @@
+/*##################################################################
+ #                   Bismillahir Rahmanir Rahim                    #
+ #                         ALLAHU AKBAR                            #
+ #                                                                 #
+ #                  ***Author : TARIKUL ISLAM                      #
+ #        Bangladesh University of Business and Technology,(BUBT)  #
+ #                      ** Dept.of CSE.                            #
+###################################################################*/
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define nn '\n'
+#define EPS 1e-9
+#define PI 3.1415926535897932384626433832795
+#define pb push_back
+#define asort(a) sort(a.begin(), a.end())
+#define areverse(a) reverse(a.begin(), a.end())
+#define sp " "
+#define test  \
+    ll t;     \
+    cin >> t; \
+    while (t--)
+//************************************************Fast and second value import***********************************************************
+//****************************************************************************************************************************************
+int main()
+{
+    ll sum = 0;
+    test
+    {
+        map<string, int> mp;
+        string s;
+        ll value;
+        
+        cin >> s;
+        if (s == "donate")
+        {
+            cin >> value;
+            sum = sum + value;
+            mp[s] = value;
+        }
+        else
+        {
+            cout << sum << nn;
+        }
+        
+    }
+    return 0;
+}
+//****************************************************************************************************************************************
+//****************************************************************************************************************************************
